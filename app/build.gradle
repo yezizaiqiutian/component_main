@@ -1,0 +1,27 @@
+apply from: "../../component_config/lib_config/base_gradle.gradle"
+
+android {
+
+    defaultConfig {
+        applicationId "com.gh.component_main"
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation "com.gh.android:module_main"
+    implementation "com.gh.android:lib_common"
+
+}
