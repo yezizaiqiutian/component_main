@@ -20,6 +20,12 @@
             android:layout_height="wrap_content"
             android:text="拦截器demo" />
 
+        <Button
+            android:id="@+id/btn_islogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否登录" />
+
     </LinearLayout>
 
 </layout>

@@ -1,4 +1,8 @@
 apply from: "../../component_config/lib_config/base_gradle.gradle"
+apply from: "../../component_config/lib_config/base_maven.gradle"
+
+//aarVersionName = "0.0.1"
+aarVersionName = "0.0.3-SNAPSHOT" //发布提测包(用于测试的aar版本)
 
 android {
 
@@ -19,6 +23,8 @@ android {
 }
 
 dependencies {
+
+    kapt "com.alibaba:arouter-compiler:1.5.1"
 
     implementation "com.gh.android:lib_common"
 
